@@ -1,17 +1,20 @@
-#include<stdio.h>
-unsigned long carre(short nb)
-{
-return((long)nb * nb);
-}
-long cube(short nb)
-{
-return((long)nb * nb * nb);
-}
+
+#include <stdio.h>
 int main()
 {
-printf("carre de 2 = %lu\n", carre(2));
-printf("cube  de 3 = %ld\n", cube(3));
+int somme, n_premiers_entiers, indice ;
+printf("calcule la somme des n premiers entiersm entrez n: \n ");
+scanf(n_premiers_entiers);
+indice = 0;
+somme = 0;
+while(indice <= n_premiers_entiers){
+somme += indice;
+indice++;}
+printf("la somme est %d\n", somme);
 return 0;
 }
+
+
+
 
 
